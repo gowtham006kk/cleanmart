@@ -5,6 +5,6 @@ const { getContacts } = require('./../../controllers/admin/contact');  // Adjust
 const router = express.Router();
 
 // Route to fetch all contacts
-router.get('/admin/contact', getContacts);
+router.get('/admin/contacts', getContacts);
 
 module.exports = router;
