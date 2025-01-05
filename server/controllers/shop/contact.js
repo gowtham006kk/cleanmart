@@ -1,4 +1,4 @@
-const Contact = require("./../../models/Contact");
+const Contact = require("./../../models/Contact.js");
 const { validationResult } = require('express-validator'); // Assuming you use express-validator for validation
 
 // Save a new contact
