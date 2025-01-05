@@ -1,7 +1,6 @@
-
-
 const express = require('express');
-const { getContacts } = require('./../../controllers/admin/contact');  // Adjust the path as needed
+const path = require('path');
+const { getContacts } = require(path.join(__dirname, '../../controllers/admin/contact'));
 const router = express.Router();
 
 // Route to fetch all contacts
