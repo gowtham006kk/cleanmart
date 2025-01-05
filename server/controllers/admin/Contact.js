@@ -1,4 +1,4 @@
-const Contact = require('./../../models/Contact');  // Adjust the path as needed
+const Contact = require('./Contact.model');  // Adjust the path as needed
 
 // Controller function to get all contacts
 const getContacts = async (req, res) => {
