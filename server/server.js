@@ -13,7 +13,7 @@ const shopAddressRouter = require("./routes/shop/address-routes");
 const shopOrderRouter = require("./routes/shop/order-routes");
 const shopSearchRouter = require("./routes/shop/search-routes");
 const shopReviewRouter = require("./routes/shop/review-routes");
-const contactRouter = require("./routes/shop/contact")
+const saveContact = require("./routes/shop/contact")
 const commonFeatureRouter = require("./routes/common/feature-routes");
 const getContacts = require("./routes/admin/Contact")
 const getLatestProducts = require("./routes/shop/latestProducts");
@@ -58,7 +58,7 @@ app.use("/api/shop/address", shopAddressRouter);
 app.use("/api/shop/order", shopOrderRouter);
 app.use("/api/shop/search", shopSearchRouter);
 app.use("/api/shop/review", shopReviewRouter);
-app.use("/api", contactRouter);
+app.use("/api", saveContact);
 // app.use("/api/",getLatestProducts);
 app.use("/api/common/feature", commonFeatureRouter);
 app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
